@@ -1,15 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
   <meta charset="UTF-8">
-  <title>Page Title</title>
-  
-  <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bun Bun Bake Shop</title>
+</head>
 
-    <h1>I am the solution to HW1!</h1>
+<body>
 
-    <p>
-        And I can link to <a href="./otherpage.html">other pages.</a>
-    </p>
+  <header>
+    <!-- Header is going to have the logo, nav links and the heading -->
 
-  </body>
+    <img src="assets/logo/logo-01.svg" alt="Logo" />
+    <div>
+      <nav>
+        <ul>
+          <li><a href="#" class="products-link">Products</a></li>
+          <li><a href="#" class="cart-link">Cart</a></li>
+        </ul>
+      </nav>
+      <hr>
+      <h1>Our hand-made cinnamon rolls</h1>
+    </div>
+
+  </header>
+
+
+  <section class="product">
+
+
+    <div class="cinnamon-rolls-container">
+      <!-- Container for all cinnamon rolls -->
+
+
+      <div class="cinnamon-roll">
+        <!-- Container/Card for each cinnamon roll along with the options for it -->
+        <img src="assets\products\original-cinnamon-roll.jpg" alt="Original Cinnamon Roll">
+        <h3>Original Cinnamon Roll</h3>
+        <!-- Container for all options- choose glazing, pack size and add to cart -->
+        <div class="options">
+          <!-- Container for glazing and dropdown -->
+          <div class="glazing">
+            <label for="glazing">Glazing:</label>
+            <select id="glazing">
+              <option value="original">Keep Original</option>
+              <option value="sugar-milk">Sugar Milk</option>
+              <option value="vanilla-milk">Vanilla Milk</option>
+              <option value="double-chocolate">Double Chocolate</option>
+            </select>
+          </div>
+          <!-- Container for pack sizes and options -->
+          <div class="pack-sizes">
+            <label>Pack Size:</label>
+            <input type="radio" id="pack-size-1-original" name="pack-size" value="1">
+            <label for="pack-size-1-original" class="pack-size-label">1</label>
+
+            <input type="radio" id="pack-size-3-original" name="pack-size" value="3">
+            <label for="pack-size-3-original" class="pack-size-label">3</label>
+
+            <input type="radio" id="pack-size-6-original" name="pack-size" value="6">
+            <label for="pack-size-6-original" class="pack-size-label">6</label>
+
+            <input type="radio" id="pack-size-12-original" name="pack-size" value="12">
+            <label for="pack-size-12-original" class="pack-size-label">12</label>
+          </div>
+          <!-- Container for the cost and the add to cart button -->
+          <div class="cost-button">
+            <price>$2.49</price>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cinnamon-roll">
+        <img src="assets\products\apple-cinnamon-roll.jpg" alt="Apple Cinnamon Roll">
+        <h3>Apple Cinnamon Roll</h3>
+        <div class="options">
+          <div class="glazing">
+            <label for="glazing">Glazing:</label>
+            <select id="glazing">
+              <option value="original">Keep Original</option>
+              <option value="sugar-milk">Sugar Milk</option>
+              <option value="vanilla-milk">Vanilla Milk</option>
+              <option value="double-chocolate">Double Chocolate</option>
+            </select>
+          </div>
+          <div class="pack-sizes">
+            <label>Pack Size:</label>
+            <input type="radio" id="pack-size-1-apple" name="pack-size" value="1">
+            <label for="pack-size-1-apple" class="pack-size-label">1</label>
+
+            <input type="radio" id="pack-size-3-apple" name="pack-size" value="3">
+            <label for="pack-size-3-apple" class="pack-size-label">3</label>
+
+            <input type="radio" id="pack-size-6-apple" name="pack-size" value="6">
+            <label for="pack-size-6-apple" class="pack-size-label">6</label>
+
+            <input type="radio" id="pack-size-12-apple" name="pack-size" value="12">
+            <label for="pack-size-12-apple" class="pack-size-label">12</label>
+          </div>
+          <div class="cost-button">
+            <price>$3.49</price>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cinnamon-roll">
+        <img src="assets\products\raisin-cinnamon-roll.jpg" alt="Raisin Cinnamon Roll">
+        <h3>Raisin Cinnamon Roll</h3>
+        <div class="options">
+          <div class="glazing">
+            <label for="glazing">Glazing:</label>
+            <select id="glazing">
+              <option value="original">Keep Original</option>
+              <option value="sugar-milk">Sugar Milk</option>
+              <option value="vanilla-milk">Vanilla Milk</option>
+              <option value="double-chocolate">Double Chocolate</option>
+            </select>
+          </div>
+          <div class="pack-sizes">
+            <label>Pack Size:</label>
+            <input type="radio" id="pack-size-1-raisin" name="pack-size" value="1">
+            <label for="pack-size-1-raisin" class="pack-size-label">1</label>
+
+            <input type="radio" id="pack-size-3-raisin" name="pack-size" value="3">
+            <label for="pack-size-3-raisin" class="pack-size-label">3</label>
+
+            <input type="radio" id="pack-size-6-raisin" name="pack-size" value="6">
+            <label for="pack-size-6-raisin" class="pack-size-label">6</label>
+
+            <input type="radio" id="pack-size-12-raisin" name="pack-size" value="12">
+            <label for="pack-size-12-raisin" class="pack-size-label">12</label>
+          </div>
+          <div class="cost-button">
+            <price>$2.99</price>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cinnamon-roll">
+        <img src="assets\products\walnut-cinnamon-roll.jpg" alt="Walnut Cinnamon Roll">
+        <h3>Walnut cinnamon roll</h3>
+        <div class="options">
+          <div class="glazing">
+            <label for="glazing">Glazing:</label>
+            <select id="glazing">
+              <option value="original">Keep Original</option>
+              <option value="sugar-milk">Sugar Milk</option>
+              <option value="vanilla-milk">Vanilla Milk</option>
+              <option value="double-chocolate">Double Chocolate</option>
+            </select>
+          </div>
+          <div class="pack-sizes">
+            <label>Pack Size:</label>
+            <input type="radio" id="pack-size-1-walnut" name="pack-size" value="1">
+            <label for="pack-size-1-walnut" class="pack-size-label">1</label>
+
+            <input type="radio" id="pack-size-3-walnut" name="pack-size" value="3">
+            <label for="pack-size-3-walnut" class="pack-size-label">3</label>
+
+            <input type="radio" id="pack-size-6-walnut" name="pack-size" value="6">
+            <label for="pack-size-6-walnut" class="pack-size-label">6</label>
+
+            <input type="radio" id="pack-size-12-walnut" name="pack-size" value="12">
+            <label for="pack-size-12-walnut" class="pack-size-label">12</label>
+          </div>
+          <div class="cost-button">
+            <price>$3.49</price>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cinnamon-roll">
+        <img src="assets\products\double-chocolate-cinnamon-roll.jpg" alt="Double-chocolate Cinnamon Roll">
+        <h3>Double-chocolate Cinnamon Roll</h3>
+        <div class="options">
+          <div class="glazing">
+            <label for="glazing">Glazing:</label>
+            <select id="glazing">
+              <option value="original">Keep Original</option>
+              <option value="sugar-milk">Sugar Milk</option>
+              <option value="vanilla-milk">Vanilla Milk</option>
+              <option value="double-chocolate">Double Chocolate</option>
+            </select>
+          </div>
+          <div class="pack-sizes">
+            <label>Pack Size:</label>
+            <input type="radio" id="pack-size-1-dchoc" name="pack-size" value="1">
+            <label for="pack-size-1-dchoc" class="pack-size-label">1</label>
+
+            <input type="radio" id="pack-size-3-dchoc" name="pack-size" value="3">
+            <label for="pack-size-3-dchoc" class="pack-size-label">3</label>
+
+            <input type="radio" id="pack-size-6-dchoc" name="pack-size" value="6">
+            <label for="pack-size-6-dchoc" class="pack-size-label">6</label>
+
+            <input type="radio" id="pack-size-12-dchoc" name="pack-size" value="12">
+            <label for="pack-size-12-dchoc" class="pack-size-label">12</label>
+          </div>
+          <div class="cost-button">
+            <price>$3.99</price>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="cinnamon-roll">
+        <img src="assets\products\strawberry-cinnamon-roll.jpg" alt="Strawberry Cinnamon Roll">
+        <h3>Strawberry Cinnamon Roll</h3>
+        <div class="options">
+          <div class="glazing">
+            <label for="glazing">Glazing:</label>
+            <select id="glazing">
+              <option value="original">Keep Original</option>
+              <option value="sugar-milk">Sugar Milk</option>
+              <option value="vanilla-milk">Vanilla Milk</option>
+              <option value="double-chocolate">Double Chocolate</option>
+            </select>
+          </div>
+          <div class="pack-sizes">
+            <label>Pack Size:</label>
+            <input type="radio" id="pack-size-1-strawberry" name="pack-size" value="1">
+            <label for="pack-size-1-strawberry" class="pack-size-label">1</label>
+
+            <input type="radio" id="pack-size-3-strawberry" name="pack-size" value="3">
+            <label for="pack-size-3-strawberry" class="pack-size-label">3</label>
+
+            <input type="radio" id="pack-size-6-strawberry" name="pack-size" value="6">
+            <label for="pack-size-6-strawberry" class="pack-size-label">6</label>
+
+            <input type="radio" id="pack-size-12-strawberry" name="pack-size" value="12">
+            <label for="pack-size-12-strawberry" class="pack-size-label">12</label>
+          </div>
+          <div class="cost-button">
+            <price>$3.99</price>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
+
 </html>
