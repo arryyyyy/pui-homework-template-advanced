@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/teach-pui-example-react/solution-hw1/build/static/css/main.073c9b0a.css",
-    "main.js": "/teach-pui-example-react/solution-hw1/build/static/js/main.82f0fda3.js",
-    "index.html": "/teach-pui-example-react/solution-hw1/build/index.html",
-    "main.073c9b0a.css.map": "/teach-pui-example-react/solution-hw1/build/static/css/main.073c9b0a.css.map",
-    "main.82f0fda3.js.map": "/teach-pui-example-react/solution-hw1/build/static/js/main.82f0fda3.js.map"
+    "main.css": "./static/css/main.5f340d37.css",
+    "main.js": "./static/js/main.6a78e5cc.js",
+    "static/js/787.e7d93d16.chunk.js": "./static/js/787.e7d93d16.chunk.js",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "./index.html",
+    "main.5f340d37.css.map": "./static/css/main.5f340d37.css.map",
+    "main.6a78e5cc.js.map": "./static/js/main.6a78e5cc.js.map",
+    "787.e7d93d16.chunk.js.map": "./static/js/787.e7d93d16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.82f0fda3.js"
+    "static/css/main.5f340d37.css",
+    "static/js/main.6a78e5cc.js"
   ]
 }
