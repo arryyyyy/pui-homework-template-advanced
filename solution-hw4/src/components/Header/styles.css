@@ -1,0 +1,22 @@
+/* Cart popup styles */
+.cart-dropdown {
+    position: relative;
+    display: inline-block; 
+}
+
+#cartPopup {
+    position: absolute;
+    bottom: -75%; 
+    right: 0; 
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: none; 
+    z-index: 1000; 
+    display: block !important;
+}
+
+.cart-summary, #cartPopup {
+    text-transform: none; 
+    font-weight: normal;  
+}
